@@ -24,58 +24,58 @@ namespace global
         public:
         
             /** 
-            * Constructor.
-            *
-            * @param config a operating system configuration.
-            */    
+             * Constructor.
+             *
+             * @param config a operating system configuration.
+             */    
             Cpu(const Configuration config);
             
             /** 
-            * Destructor.
-            */
+             * Destructor.
+             */
             virtual ~Cpu();
             
             /**
-            * Tests if this object has been constructed.
-            *
-            * @return true if object has been constructed successfully.
-            */    
+             * Tests if this object has been constructed.
+             *
+             * @return true if object has been constructed successfully.
+             */    
             virtual bool isConstructed() const;
             
             /**
-            * Returns a name of a target Central Processing Unit. 
-            *
-            * @return a CPU name, or NULL if an error has been occurred.
-            */      
+             * Returns a name of a target Central Processing Unit. 
+             *
+             * @return a CPU name, or NULL if an error has been occurred.
+             */      
             virtual const char* getName() const;                
             
         private:
         
             /**
-            * Constructs this object.
-            *
-            * @return true if object has been constructed successfully.     
-            */    
+             * Constructs this object.
+             *
+             * @return true if object has been constructed successfully.     
+             */    
             bool construct();
             
             /**
-            * Copy constructor.
-            *
-            * @param obj a reference to source object.
-            */
+             * Copy constructor.
+             *
+             * @param obj a reference to source object.
+             */
             Cpu(const Cpu& obj);
         
             /**
-            * Assignment operator.
-            *
-            * @param obj a reference to source object.
-            * @return reference to this object.     
-            */
+             * Assignment operator.
+             *
+             * @param obj a reference to source object.
+             * @return reference to this object.     
+             */
             Cpu& operator =(const Cpu& obj);           
     
             /**    
-            * Configuration of the operating system.
-            */
+             * Configuration of the operating system.
+             */
             const Configuration config_;
             
         };

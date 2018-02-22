@@ -12,15 +12,15 @@ namespace global
     namespace cpu
     {
         /** 
-        * Constructor.
-        */  
+         * Constructor.
+         */  
         Object::Object() : Parent()
         {
         }
         
         /** 
-        * Destructor.
-        */    
+         * Destructor.
+         */    
         Object::~Object()
         {
         }      

@@ -12,10 +12,10 @@ namespace global
     namespace cpu
     {
         /** 
-        * Constructor.
-        *
-        * @param config a operating system configuration.
-        */    
+         * Constructor.
+         *
+         * @param config a operating system configuration.
+         */    
         Cpu::Cpu(const Configuration config) : Parent(),
             config_ (config){
             const bool isConstructed = construct();
@@ -23,37 +23,37 @@ namespace global
         }
         
         /** 
-        * Destructor.
-        */
+         * Destructor.
+         */
         Cpu::~Cpu()
         {
         }
         
         /**
-        * Tests if this object has been constructed.
-        *
-        * @return true if object has been constructed successfully.
-        */    
+         * Tests if this object has been constructed.
+         *
+         * @return true if object has been constructed successfully.
+         */    
         bool Cpu::isConstructed() const
         {
             return Parent::getConstruct();
         }
         
         /**
-        * Returns a name of a target Central Processing Unit. 
-        *
-        * @return a CPU name, or NULL if an error has been occurred.
-        */      
+         * Returns a name of a target Central Processing Unit. 
+         *
+         * @return a CPU name, or NULL if an error has been occurred.
+         */      
         const char* Cpu::getName() const
         {
             return "TI TMS320C64x+ DSP";
         }
         
         /**
-        * Constructs this object.
-        *
-        * @return true if object has been constructed successfully.     
-        */    
+         * Constructs this object.
+         *
+         * @return true if object has been constructed successfully.     
+         */    
         bool Cpu::construct()
         {
             if( not Self::isConstructed() )
