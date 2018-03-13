@@ -8,13 +8,13 @@
 #ifndef CPU_ALLOCATOR_HPP_
 #define CPU_ALLOCATOR_HPP_
 
-#include "api.Constant.hpp"
+#include "Types.hpp"
 
 namespace global
 {
     namespace cpu
     {
-        class Allocator : public api::Constant
+        class Allocator
         {
         
         public:

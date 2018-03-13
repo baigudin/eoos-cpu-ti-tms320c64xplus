@@ -36,7 +36,7 @@ namespace global
          */    
         bool Cpu::isConstructed() const
         {
-            return Parent::getConstruct();
+            return getConstruct();
         }
         
         /**

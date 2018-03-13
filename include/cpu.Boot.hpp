@@ -11,13 +11,13 @@
 #ifndef CPU_BOOT_HPP_
 #define CPU_BOOT_HPP_
 
-#include "api.Constant.hpp"
+#include "Types.hpp"
 
 namespace global
 {
     namespace cpu
     {
-        class Boot : public api::Constant
+        class Boot
         {
     
         public:
