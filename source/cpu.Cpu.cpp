@@ -16,9 +16,9 @@ namespace global
          *
          * @param config a operating system configuration.
          */    
-        Cpu::Cpu(const Configuration config) : Parent(),
+        Cpu::Cpu(Configuration const config) : Parent(),
             config_ (config){
-            const bool isConstructed = construct();
+            bool const isConstructed = construct();
             setConstruct( isConstructed );
         }
         
@@ -56,11 +56,18 @@ namespace global
          */    
         bool Cpu::construct()
         {
-            if( not Self::isConstructed() )
+            bool res = Self::isConstructed();
+            while(res == true)
             {
-                return false;
+                if( config_.cpuClock == 0 || config_.sourceClock == 0 )
+                {
+                    res = false;
+                    continue;
+                }            
+                // The construction completed successfully
+                break;
             }
-            return true;
+            return res;  
         }
     }
 }

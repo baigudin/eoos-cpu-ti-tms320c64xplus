@@ -28,7 +28,7 @@ namespace global
              *
              * @param config a operating system configuration.
              */    
-            Cpu(const Configuration config);
+            Cpu(Configuration config);
             
             /** 
              * Destructor.
@@ -76,7 +76,7 @@ namespace global
             /**    
              * Configuration of the operating system.
              */
-            const Configuration config_;
+            Configuration config_;
             
         };
     }

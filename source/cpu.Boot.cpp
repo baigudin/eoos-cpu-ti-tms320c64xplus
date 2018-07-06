@@ -29,7 +29,9 @@ namespace global
             while(cRecord != NULL)
             {
                 for(int32 i=0; i<cRecord->size; i++) 
+                {
                     cRecord->addr[i] = cRecord->data[i];
+                }
                 cRecord = getCRecord(cRecord);
             }
             // Call global C++ class default constructors
