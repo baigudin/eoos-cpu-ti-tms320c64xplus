@@ -19,7 +19,7 @@ namespace global
         Cpu::Cpu(Configuration const config) : Parent(),
             config_ (config){
             bool const isConstructed = construct();
-            setConstruct( isConstructed );
+            setConstructed( isConstructed );
         }
         
         /** 
@@ -36,7 +36,7 @@ namespace global
          */    
         bool Cpu::isConstructed() const
         {
-            return getConstruct();
+            return Parent::isConstructed();
         }
         
         /**
