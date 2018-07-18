@@ -12,7 +12,7 @@
 #include "api.Cpu.hpp"
 #include "Configuration.hpp"
 
-namespace global
+namespace local
 {
     namespace cpu
     {

@@ -21,24 +21,24 @@
     ; COFF ABI
     .else
     
-    .def  _getCRecord__Q3_6global3cpu4BootSFv
-    .def  _getPRecord__Q3_6global3cpu4BootSFv
+    .def  _getCRecord__Q3_5local3cpu4BootSFv
+    .def  _getPRecord__Q3_5local3cpu4BootSFv
 
-    .ref  _initialize__Q3_6global3cpu4BootSFv
+    .ref  _initialize__Q3_5local3cpu4BootSFv
            
     .ref  _main
     .ref  ___cinit__
     .ref  ___pinit__
     .ref  ___bss__ 
     
-    .asg  _main,                                m_main        
-    .asg  _getCRecord__Q3_6global3cpu4BootSFv,  m_get_cinit
-    .asg  _getPRecord__Q3_6global3cpu4BootSFv,  m_get_pinit
-    .asg  _initialize__Q3_6global3cpu4BootSFv,  m_boot_init    
-    .asg  _c_int00,                             m_bootstrap
-    .asg  ___cinit__,                           v_cinit
-    .asg  ___pinit__,                           v_pinit
-    .asg  ___bss__,                             v_bss
+    .asg  _main,                               m_main        
+    .asg  _getCRecord__Q3_5local3cpu4BootSFv,  m_get_cinit
+    .asg  _getPRecord__Q3_5local3cpu4BootSFv,  m_get_pinit
+    .asg  _initialize__Q3_5local3cpu4BootSFv,  m_boot_init    
+    .asg  _c_int00,                            m_bootstrap
+    .asg  ___cinit__,                          v_cinit
+    .asg  ___pinit__,                          v_pinit
+    .asg  ___bss__,                            v_bss
     
     .endif ; EABI
     

@@ -10,7 +10,7 @@
  */
 #include "cpu.Boot.hpp"
 
-namespace global
+namespace local
 {
     namespace cpu
     {

@@ -7,7 +7,7 @@
  */
 #include "cpu.Cpu.hpp"
 
-namespace global
+namespace local
 {
     namespace cpu
     {
