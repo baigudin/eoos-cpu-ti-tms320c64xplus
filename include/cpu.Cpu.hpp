@@ -26,9 +26,11 @@ namespace local
             /** 
              * Constructor.
              *
+             * NOTE: A passed configuration will be copied to an internal data of the class.
+             *
              * @param config a operating system configuration.
              */    
-            Cpu(Configuration config);
+            Cpu(const Configuration& config);
             
             /** 
              * Destructor.

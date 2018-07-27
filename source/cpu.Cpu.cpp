@@ -16,7 +16,7 @@ namespace local
          *
          * @param config a operating system configuration.
          */    
-        Cpu::Cpu(Configuration const config) : Parent(),
+        Cpu::Cpu(const Configuration& config) : Parent(),
             config_ (config){
             bool const isConstructed = construct();
             setConstructed( isConstructed );
